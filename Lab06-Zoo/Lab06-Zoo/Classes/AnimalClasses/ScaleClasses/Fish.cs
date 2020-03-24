@@ -4,17 +4,16 @@ using System.Text;
 
 namespace Lab06_Zoo.Classes.AnimalClasses
 {
-    public class Fish : Scaled
+    // Abstract Class, 
+    // Based on Scaled
+    // Derived by LionFish and Shark
+    // Never directly instantiated
+    public abstract class Fish : Scaled
     {
-        public int Fins { get; set; }
+        public int Fins = 4;
         public void Swim()
         {
             // A fish can swim
-        }
-
-        public Fish(int fins = 4)
-        {
-            this.Fins = fins;
         }
     }
 }

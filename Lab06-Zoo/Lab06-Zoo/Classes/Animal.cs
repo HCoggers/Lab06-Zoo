@@ -4,16 +4,25 @@ using System.Text;
 
 namespace Lab06_Zoo.Classes
 {
-    public class Animal
+    // Abstract Base Class, 
+    // Derived by Feathered, Scaled, and Furred classes
+    // Never directly instantiated
+    public abstract class Animal
     {
         public int Age = 0;
-        public Animal[] Parents { get; set; }
-        public int Legs { get; set; }
         public string Habitat = "nest";
+        public int Legs = 4;
+        public int Weight { get; set; }
+        public Animal[] Parents = new Animal[2];
+        public string Sound { get; set; }
+        public string Species { get; set; }
 
-        public Animal(int legs = 4)
+        /// <summary>
+        /// prints the animal's sound to the console
+        /// </summary>
+        public void MakeSound()
         {
-            this.Legs = legs;
+            Console.WriteLine($"{this.Sound}");
         }
     }
 }

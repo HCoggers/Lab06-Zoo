@@ -4,12 +4,12 @@ using System.Text;
 
 namespace Lab06_Zoo.Classes.AnimalClasses
 {
-    public class Reptile : Scaled
+    // Abstract Class, 
+    // Based on Scaled
+    // Derived by Boa and Salamander
+    // Never directly instantiated
+    public abstract class Reptile : Scaled
     {
-        public int Teeth { get; set; }
-        public Reptile(int teeth = 1000)
-        {
-            this.Teeth = teeth;
-        }
+        public int Teeth = 1000;
     }
 }
