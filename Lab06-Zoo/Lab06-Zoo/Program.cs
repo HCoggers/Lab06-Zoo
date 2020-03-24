@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Lab06_Zoo.Classes;
+using Lab06_Zoo.Classes.AnimalClasses;
+using System;
 
 namespace Lab06_Zoo
 {
@@ -19,7 +21,18 @@ namespace Lab06_Zoo
                     - Label where you are using polymorphism in your program. Identify where the virtual and abstract methods are defined, and where are they being overridden.
                 4. Your program class should instantiate each of the concrete animals to prove the functionality of it’s base classes.
             */
+            Scaled[] scales = new Scaled[]
+            {
+                new LionFish(),
+                new Shark(),
+                new Boa(),
+                new Salamander()
+            };
 
+            foreach(Scaled animal in scales)
+            {
+                animal.MakeSound();
+            }
         }
     }
 }
