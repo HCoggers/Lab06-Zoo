@@ -4,13 +4,12 @@ using System.Text;
 
 namespace Lab06_Zoo.Classes.AnimalClasses.FurClasses
 {
-    public class Domestic : Furred
+    // Abstract Class, 
+    // Based on Furred
+    // Derived by Horse and Cat
+    // Never directly instantiated
+    public abstract class Domestic : Furred
     {
-        public string Name { get; set; }
-        public Domestic(string name = "unnamed")
-        {
-            this.Name = name;
-
-        }
+        public string Name = "unnamed";
     }
 }

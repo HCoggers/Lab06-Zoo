@@ -11,5 +11,6 @@ namespace Lab06_Zoo.Classes
     public class Feathered : Animal
     {
         public string BeakShape = "hooked";
+        public bool Waterproof = true;
     }
 }

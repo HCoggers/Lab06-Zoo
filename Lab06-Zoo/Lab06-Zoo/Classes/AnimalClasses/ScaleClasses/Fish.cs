@@ -12,7 +12,7 @@ namespace Lab06_Zoo.Classes.AnimalClasses
     {
         public int Fins = 4;
         /// <summary>
-        /// Allows an animal to swim through water quickly.
+        /// Returns true if a fish is cold-blooded.
         /// </summary>
         public bool CanSwim()
         {

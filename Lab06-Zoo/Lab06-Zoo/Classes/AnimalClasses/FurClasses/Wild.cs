@@ -4,12 +4,12 @@ using System.Text;
 
 namespace Lab06_Zoo.Classes.AnimalClasses.FurClasses
 {
-    public class Wild : Furred
+    // Abstract Class, 
+    // Based on Furred
+    // Derived by Giraffe and Wolf
+    // Never directly instantiated
+    public abstract class Wild : Furred
     {
-        public bool IsPredator { get; set; }
-        public Wild(bool predator = true)
-        {
-            this.IsPredator = predator;
-        }
+        public bool IsPredator = true;
     }
 }
