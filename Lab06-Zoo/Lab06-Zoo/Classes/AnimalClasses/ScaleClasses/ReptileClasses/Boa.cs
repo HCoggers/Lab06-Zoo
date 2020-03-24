@@ -9,10 +9,17 @@ namespace Lab06_Zoo.Classes.AnimalClasses
     // Can be instantiated
     public class Boa : Reptile
     {
+        /// <summary>
+        /// A Boa's best defense mechanism is squeezing its prey
+        /// </summary>
         public void Squeeze()
         {
             // Boa squeezes
         }
+
+        /// <summary>
+        /// Boa class constructor. sets species and sound properties
+        /// </summary>
         public Boa()
         {
             this.Species = "Boa Constrictor";

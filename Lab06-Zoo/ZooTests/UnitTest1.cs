@@ -20,7 +20,7 @@ namespace ZooTests
         public void LionFishHasFishBehaviors()
         {
             LionFish fish = new LionFish();
-            Assert.True(4 == fish.Fins);
+            Assert.True(fish.CanSwim());
         }
 
         [Fact]

@@ -11,9 +11,12 @@ namespace Lab06_Zoo.Classes.AnimalClasses
     public abstract class Fish : Scaled
     {
         public int Fins = 4;
-        public void Swim()
+        /// <summary>
+        /// Allows an animal to swim through water quickly.
+        /// </summary>
+        public bool CanSwim()
         {
-            // A fish can swim
+            return (this.ColdBlooded);
         }
     }
 }

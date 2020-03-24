@@ -10,6 +10,9 @@ namespace Lab06_Zoo.Classes.AnimalClasses
     public class Salamander : Reptile
     {
         public bool CanSwim = true;
+        /// <summary>
+        /// Salamander class constructor. sets species and sound properties
+        /// </summary>
         public Salamander()
         {
             this.Species = "Salamander";
