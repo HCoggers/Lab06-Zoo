@@ -15,6 +15,10 @@ namespace ZooApp.Classes
         public int BreathTime { get; set; } = 300;
 
         // BEHAVIORS
+
+        /// <summary>
+        /// Summarized in class Domestic
+        /// </summary>
         public override string TrainWith(string trainer)
         {
             if (Owner == trainer)
@@ -26,30 +30,47 @@ namespace ZooApp.Classes
             return "It didn't wanna";
         }
 
+
+        /// <summary>
+        /// Summarized in interface IFly
+        /// </summary>
         public int Climb(int Wingspan)
         {
             Altitude += Wingspan / 2;
             return Altitude;
         }
 
+        /// <summary>
+        /// Summarized in interface IFly
+        /// </summary>
         public int Fall()
         {
             Altitude -= 100;
             return Altitude;
         }
 
+        /// <summary>
+        /// Summarized in interface ISwim
+        /// </summary>
         public int Dive(int breath)
         {
             Console.WriteLine("This Horse can't dive more than 2 feet.");
             return 2;
         }
 
+        /// <summary>
+        /// Summarized in interface ISwim
+        /// </summary>
         public bool TreadWater()
         {
             Console.WriteLine($"Treads water for {BreathTime}.");
             return true;
         }
 
+        /// <summary>
+        /// Horse's constructor
+        /// </summary>
+        /// <param name="name">This horse's name</param>
         public Horse(string name)
         {
             Name = name;

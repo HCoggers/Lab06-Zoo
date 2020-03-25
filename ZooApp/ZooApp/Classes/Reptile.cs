@@ -15,13 +15,26 @@ namespace ZooApp.Classes
 
 
         // BEHAVIORS
+
+        /// <summary>
+        /// The animal lays eggs
+        /// </summary>
+        /// <returns>the number of eggs it lays</returns>
         public abstract int LayEggs();
+
+        /// <summary>
+        /// Summarized in interface ISwim
+        /// </summary>
         public int Dive(int breath)
         {
             Console.WriteLine($"Dove down { BreathTime / 10} feet.");
             return BreathTime / 10;
         }
 
+
+        /// <summary>
+        /// Summarized in interface ISwim
+        /// </summary>
         public bool TreadWater()
         {
             Console.WriteLine($"Treads water for {BreathTime} seconds.");

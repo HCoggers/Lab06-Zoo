@@ -14,6 +14,9 @@ namespace ZooApp.Classes
 
         public override int TailLength { get; set; } = 100;
 
+        /// <summary>
+        /// Summarized in class Reptile
+        /// </summary>
         public override int LayEggs()
         {
             return TailLength / 3;

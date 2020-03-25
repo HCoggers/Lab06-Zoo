@@ -14,6 +14,10 @@ namespace ZooApp.Classes
         public override int Wingspan { get; set; } = 50;
 
         // BEHAVIORS
+
+        /// <summary>
+        /// Summarized in class Fantasy
+        /// </summary>
         public override string DoMagic()
         {
             Age++;

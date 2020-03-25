@@ -9,6 +9,10 @@ namespace ZooApp
         {
             ProveAnimalBehavior();
         }
+
+        /// <summary>
+        /// Test Out Every class in this repo
+        /// </summary>
         static void ProveAnimalBehavior()
         {
             // Use polymorphism to create base class arrays with concrete class objects
