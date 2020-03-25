@@ -1,6 +1,6 @@
 # Lab06/Lab07-OOP Principles
-*by Harry Cogswell*
-A Class structure that represents the hierarchu of different animal varieties in a zoo.
+*by Harry Cogswell*  
+A Class structure that represents the hierarchy of different animal varieties in a zoo.
 
 ----
 
