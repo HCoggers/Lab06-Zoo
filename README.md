@@ -39,3 +39,5 @@ Interfaces I like to think of in the same vein as methods. You have a method def
 - My first interface was IFly, because I wanted my fantasy creatures to be able to fly, but I also wanted to give my horses wings if I so chose. So IFly is implemented by the Base Class Fantasy, and inherited by Dragon and Phoenix, whereas the Concrete Derived class Horse directly implements IFly in its class definition. IFly gives animals a wingspan, an altitude, and the ability to change their altitude with fall or climb methods.
 
 - My second interface was ISwim, because all of my reptiles should be able to swim, but I want my horses to be able to cross that Oregon trail rive if necessary. Like with IFly, ISwim was directly implemented into the Reptile class, then inherited by its children, while Horse implemented IFly directly again (wow, my Horse class is getting busy here). ISwim lets animals have a time frame they can hold their breath, and allows them to dive underwater or tread water in place, depending on their breath control.
+
+*Zootopolis v1.0*
