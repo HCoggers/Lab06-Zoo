@@ -10,7 +10,7 @@ In This program, you won't find a lot of functionality, but instead various inst
 ---
 
 ### Visual
-![Image 1](./Assets/MockZoo.PNG)
+![Image 1](./Assets/MockZoo.jpg)
 
 ---
 
