@@ -19,5 +19,20 @@ namespace ZooApp.Classes
             else
                 return "Darn, it got away!";
         }
+
+        public sealed override string Eat()
+        {
+            Console.WriteLine("CHOMP CHOMP CHOMP");
+            switch (Diet)
+            {
+                case "Omnivore":
+                    return $"My favorite food is ABSOLUTELY EVERYTHING.";
+                case "Carnivore":
+                    return $"I'm a Meat-Lover for sure!";
+                case "Herbivore":
+                    return $"Do you have any vegan options?";
+            }
+            return base.Eat();
+        }
     }
 }

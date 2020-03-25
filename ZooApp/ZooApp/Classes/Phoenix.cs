@@ -14,9 +14,11 @@ namespace ZooApp.Classes
         public override int Age { get; set; } = Int32.MaxValue;
 
         // BEHAVIORS
-        public string Rebirthe()
+        public override string DoMagic()
         {
-            return "FLAMES!!!!... and a baby phoenix!";
+            Age++;
+            Console.WriteLine($"Your phoenix is {Age} years old.");
+            return $"FLAMES!!!!... and a baby {Age}-year old phoenix!";
         }
 
     }
