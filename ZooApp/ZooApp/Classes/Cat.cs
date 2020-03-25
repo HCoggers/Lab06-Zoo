@@ -9,7 +9,12 @@ namespace ZooApp.Classes
         // ATTRIBUTES
         public bool HasConeOfShame = false;
         public override string Noise { get; set; } = "Meow!";
-        public override string Name { get; set; } = "This cat has no name.";
+        public override string TrainWith(string trainer)
+        {
+            if (Owner == trainer)
+                return $"{Name} learned to sit.";
+            return "It didn't wanna";
+        }
 
         // Constructor
         public Cat(string name)

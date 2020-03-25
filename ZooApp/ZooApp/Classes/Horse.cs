@@ -6,8 +6,21 @@ namespace ZooApp.Classes
 {
     class Horse : Domestic
     {
-        public override string Name { get; set; } = "This Horse has no name";
+        // ATTRIBUTES
         public override string Noise { get; set; } = "Neigh!";
+        public int GallopSpeed { get; set; } = 100;
+
+        // BEHAVIORS
+        public override string TrainWith(string trainer)
+        {
+            if (Owner == trainer)
+            {
+                GallopSpeed++;
+                return $"{Name} got a little faster.";
+            }
+
+            return "It didn't wanna";
+        }
 
         public Horse(string name)
         {

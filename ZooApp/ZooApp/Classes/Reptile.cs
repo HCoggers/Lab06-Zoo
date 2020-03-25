@@ -12,9 +12,6 @@ namespace ZooApp.Classes
         public override string Diet { get; set; } = "Carnivore";
 
         // BEHAVIORS
-        public int LayEggs( int nestSize )
-        {
-            return 3 * nestSize;
-        }
+        public abstract int LayEggs();
     }
 }

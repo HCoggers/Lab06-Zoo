@@ -17,5 +17,10 @@ namespace ZooApp.Classes
         {
             return "It's always disguised.";
         }
+        public override int LayEggs()
+        {
+            return 3;
+        }
+
     }
 }
