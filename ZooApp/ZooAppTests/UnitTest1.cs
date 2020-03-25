@@ -112,10 +112,38 @@ namespace ZooAppTests
 
         // LAB 7 TESTS
         #region
+        // Test that the classes that implement the interface actually implement it
+        // Test inheritance
+        // Test Polymorphism
+            // Prove methods have been overridden
+            // Prove that one of your concrete animals is an Animal
         [Fact]
-        public void Test()
+        public void ClassesImplementInterfaces()
         {
+            Horse buttercup = new Horse("Buttercup");
+            Dragon dunstan = new Dragon();
 
+            Assert.True(buttercup.Dive(20) == 2 && dunstan.Climb(200) == 400);
+        }
+
+        [Fact]
+        public void SnakeInheritsFromReptileImplementingISwim()
+        {
+            Snake sneaky = new Snake();
+            Assert.True(sneaky.TreadWater());
+        }
+
+        [Fact]
+        public void SameMethodsButOverridden()
+        {
+            Assert.NotEqual(new Dragon().DoMagic(), new Phoenix().DoMagic());
+        }
+
+        [Fact]
+        public void ConcreteAnimalIsAlsoAbstractAnimal()
+        {
+            Cat pips = new Cat("Pips");
+            Assert.True(pips is Animal && pips is Cat);
         }
         #endregion
     }
