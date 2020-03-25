@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ZooApp.Classes
 {
-    class Crocodile : Reptile
+    public class Crocodile : Reptile
     {
         // ATTRIBUTES
         public override string Noise { get; set; } = "*sneaky log lizard noise*";

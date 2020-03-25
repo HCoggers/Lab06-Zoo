@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ZooApp.Classes
 {
-    abstract class Domestic : Animal
+    public abstract class Domestic : Animal
     {
         // ATTRIBUTES
         public string Name { get; set; }

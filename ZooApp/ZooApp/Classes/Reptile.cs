@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ZooApp.Classes
 {
-    abstract class Reptile : Wild
+    public abstract class Reptile : Wild
     {
         // ATTRIBUTES
         public int ScaleCount { get; set; } = 1000;

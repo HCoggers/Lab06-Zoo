@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ZooApp.Classes
 {
-    abstract class Mammal : Wild
+    public abstract class Mammal : Wild
     {
         // ATTRIBUTES
         public string FurColor = "Brown";

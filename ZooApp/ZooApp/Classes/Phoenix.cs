@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ZooApp.Classes
 {
-    class Phoenix : Fantasy
+    public class Phoenix : Fantasy
     {
         // ATTRIBUTES
         public override int Atk { get; set; } = 200;

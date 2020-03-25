@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ZooApp.Classes
 {
-    class Cat : Domestic
+    public class Cat : Domestic
     {
         // ATTRIBUTES
         public bool HasConeOfShame = false;

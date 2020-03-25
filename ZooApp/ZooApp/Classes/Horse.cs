@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ZooApp.Classes
 {
-    class Horse : Domestic
+    public class Horse : Domestic
     {
         // ATTRIBUTES
         public override string Noise { get; set; } = "Neigh!";

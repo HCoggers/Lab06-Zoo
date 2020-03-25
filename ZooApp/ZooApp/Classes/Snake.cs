@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ZooApp.Classes
 {
-    class Snake : Reptile
+    public class Snake : Reptile
     {
         // ATTRIBUTES
         public bool Venomous = true;

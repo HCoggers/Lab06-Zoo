@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ZooApp.Classes
 {
-    abstract class Animal
+    public abstract class Animal
     {
         // ATTRIBUTES
         public virtual int Age { get; set; } = 0;
@@ -21,7 +21,7 @@ namespace ZooApp.Classes
         public string MakeNoise()
         {
             Console.WriteLine(this.Noise, this.Noise, this.Noise);
-            return $"The {this.GetType()} says: {this.Noise}. What a racket!";
+            return $"It says: {this.Noise}. What a racket!";
         }
     }
 }

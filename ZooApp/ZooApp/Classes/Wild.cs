@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ZooApp.Classes
 {
-    abstract class Wild : Animal
+    public abstract class Wild : Animal
     {
         // ATTRIBUTES
         public virtual string Diet { get; set; } = "Omnivore";
