@@ -15,17 +15,29 @@ namespace ZooApp.Classes
         public int Altitude { get; set; } = 0;
 
         // BEHAVIOR
+
+        /// <summary>
+        /// The Animal does some magic
+        /// </summary>
+        /// <returns>the sound of magic</returns>
         public virtual string DoMagic()
         {
             return "twinkle, twinkle!";
         }
 
+        /// <summary>
+        /// Summarized in interface IFly
+        /// </summary>
         public int Climb(int Wingspan)
         {
             Altitude += 2 * Wingspan;
             return Altitude;
         }
 
+
+        /// <summary>
+        /// Summarized in interface IFly
+        /// </summary>
         public int Fall()
         {
             Altitude -= 50;

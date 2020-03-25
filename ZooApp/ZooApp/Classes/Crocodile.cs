@@ -13,10 +13,20 @@ namespace ZooApp.Classes
         public override int TailLength { get; set; } = 50;
 
         // BEHAVIORS
+
+        /// <summary>
+        /// The animal disguises itself as a log.
+        /// </summary>
+        /// <returns>It's always disguised.</returns>
         public string DisguiseAsLog()
         {
             return "It's always disguised.";
         }
+
+
+        /// <summary>
+        /// Summarized in class Reptile
+        /// </summary>
         public override int LayEggs()
         {
             return 3;

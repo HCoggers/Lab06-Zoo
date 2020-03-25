@@ -11,6 +11,11 @@ namespace ZooApp.Classes
         public override int FoodChainIndex { get; set; } = 2;
 
         // BEHAVIORS
+
+        /// <summary>
+        /// The bear catches fish based on its age
+        /// </summary>
+        /// <returns>The number of fish caught</returns>
         public int CatchFish()
         {
             if (this.Age <= 10)

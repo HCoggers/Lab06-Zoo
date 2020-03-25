@@ -9,6 +9,10 @@ namespace ZooApp.Classes
         // ATTRIBUTES
         public bool HasConeOfShame = false;
         public override string Noise { get; set; } = "Meow!";
+
+        /// <summary>
+        /// Summarized in Class Domestic
+        /// </summary>
         public override string TrainWith(string trainer)
         {
             if (Owner == trainer)
@@ -16,7 +20,10 @@ namespace ZooApp.Classes
             return "It didn't wanna";
         }
 
-        // Constructor
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="name">Cat's name</param>
         public Cat(string name)
         {
             Name = name;

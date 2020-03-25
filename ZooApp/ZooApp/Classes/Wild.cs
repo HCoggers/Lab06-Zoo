@@ -12,6 +12,11 @@ namespace ZooApp.Classes
         public abstract int FoodChainIndex { get; set; }
 
         // BEHAVIORS
+        /// <summary>
+        /// The animal hunts another wild animal
+        /// </summary>
+        /// <param name="prey">the animal to be hunted</param>
+        /// <returns>success message or failure message based on Wild animal food chain index</returns>
         public string Hunt(Wild prey)
         {
             if (prey.FoodChainIndex < this.FoodChainIndex)
@@ -20,6 +25,9 @@ namespace ZooApp.Classes
                 return "Darn, it got away!";
         }
 
+        /// <summary>
+        /// Summarized in class Animal
+        /// </summary>
         public sealed override string Eat()
         {
             Console.WriteLine("CHOMP CHOMP CHOMP");
