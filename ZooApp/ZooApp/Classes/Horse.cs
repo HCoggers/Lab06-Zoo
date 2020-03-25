@@ -1,14 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using ZooApp.Interfaces;
 
 namespace ZooApp.Classes
 {
-    public class Horse : Domestic
+    public class Horse : Domestic, IFly
     {
         // ATTRIBUTES
         public override string Noise { get; set; } = "Neigh!";
         public int GallopSpeed { get; set; } = 100;
+        public int Wingspan { get; set; } = 80;
+        public int Altitude { get; set; } = 0;
 
         // BEHAVIORS
         public override string TrainWith(string trainer)
@@ -20,6 +23,18 @@ namespace ZooApp.Classes
             }
 
             return "It didn't wanna";
+        }
+
+        public int Climb(int Wingspan)
+        {
+            Altitude += Wingspan / 2;
+            return Altitude;
+        }
+
+        public int Fall()
+        {
+            Altitude -= 100;
+            return Altitude;
         }
 
         public Horse(string name)

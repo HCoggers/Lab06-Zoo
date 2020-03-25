@@ -6,6 +6,8 @@ namespace ZooAppTests
 {
     public class UnitTest1
     {
+        // LAB 6 TESTS
+        #region
         // WELD REPTILE TESTS
         [Fact]
         public void SnakeExhibitsReptileBEhavior()
@@ -106,5 +108,15 @@ namespace ZooAppTests
             Assert.Equal(Int32.MinValue, fawkes.Age);
 
         }
+        #endregion
+
+        // LAB 7 TESTS
+        #region
+        [Fact]
+        public void Test()
+        {
+
+        }
+        #endregion
     }
 }

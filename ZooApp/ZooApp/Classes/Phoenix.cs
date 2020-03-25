@@ -10,8 +10,8 @@ namespace ZooApp.Classes
         public override int Atk { get; set; } = 200;
         public override int Def { get; set; } = 1000;
         public override string Noise { get; set; } = "Karoo!";
-
         public override int Age { get; set; } = Int32.MaxValue;
+        public override int Wingspan { get; set; } = 50;
 
         // BEHAVIORS
         public override string DoMagic()
